@@ -1,15 +1,8 @@
 name: servers-express-api-with-express-and-handlebars
 
 on:
-  push:
-    paths:
-      - 'servers/express/api-with-express-and-handlebars/**'
-  pull_request:
-    paths:
-      - 'servers/express/api-with-express-and-handlebars/**'
-  schedule:
-    # Every day at 1am
-    - cron: '0 1 * * *'
+ pull_request:
+   branches: [ "main" ]
 
 jobs:
   build:
